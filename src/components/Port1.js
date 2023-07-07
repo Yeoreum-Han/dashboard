@@ -2,17 +2,16 @@ import port1 from "../media/port1.mp4";
 
 const Port1 = () => {
   return (
-    <div className="px-5 py-5">
+    <div className="px-5 py-4">
       <h5>Myblog</h5>
-      <div className="d-flex flex-row mt-4">
-        <video src={port1} controls style={{ width: "65%" }} />
+      <div className="veCover">
+        <video src={port1} controls/>
         <div className="explain ms-4">
           <ul className="ms-4">
             <li className="title fs-5">일상기록 블로그</li>
             <li>
-              <span>기획의도 :</span> 기획의도는 시놉시스, 트리트먼트, 대본,
-              콘티 등의 집필에 앞서서 제작자나 투자자들에게 해당 콘텐츠가 어떤
-              내용인지를 압축적으로 보여주는 것이다.
+              <span>기획의도 : </span><br/> 
+              빠르게 흘러가는 일상에서 기록하고 싶은 순간들을 사진과 함께 짧은 글로 남길 수 있는 블로그입니다. 5줄 이내로 간결하게 적는 것을 권장하고, 카테고리를 나누어 글을 주제에 따라 모아보도록 했습니다. 또한 검색창을 상단에 배치해 원하는 글을 찾아볼 수 있습니다.  
             </li>
             <li>
               <span>제작기간 :</span>  6/19 ~ 6/30 (2주)
@@ -29,8 +28,8 @@ const Port1 = () => {
             <li>
               <span>json-server 배포 :</span> glitch
             </li>
-            <li>
-                홈페이지로 이동
+            <li className="mt-4 pt-1">
+              <a href="http://yrhsummer.dothome.co.kr/" target="_blank" rel="noopener noreferrer">&gt;&gt;Myblog로 이동</a>
             </li>
           </ul>
         </div>

@@ -10,9 +10,8 @@ const Port2 = () => {
           <ul className="ms-4">
             <li className="title fs-5">감정일기</li>
             <li>
-              <span>기획의도 :</span> 기획의도는 시놉시스, 트리트먼트, 대본,
-              콘티 등의 집필에 앞서서 제작자나 투자자들에게 해당 콘텐츠가 어떤
-              내용인지를 압축적으로 보여주는 것이다.
+              <span>기획의도 : </span> <br/> 
+              건강한 마음을 가지기 위해서는 자신의 감정을 돌아보고 명확히 표현할 수 있어야 합니다. 그러나 많은 사람들은 이를 잘 모르고, 시작하기도 어려워합니다. 이 일기장은 그런 사람들을 위해 기획했습니다. 여러 감정단어를 가이드로 제시하고, 한달간의 일기를 보여주며 자신에 대한 이해와, 스트레스 해소를 도와줍니다.
             </li>
             <li>
               <span>제작기간 :</span> 5/17 ~ 5/31(2주)
@@ -29,7 +28,9 @@ const Port2 = () => {
             <li>
               <span>MySql 배포 :</span> awsRDS
             </li>
-            <li>홈페이지로 이동</li>
+            <li className="mt-4 pt-1">
+              <a href="https://port-0-portfolio-node-7xwyjq992lljcjm1bh.sel4.cloudtype.app/" target="_blank" rel="noopener noreferrer">&gt;&gt;Mood Diary로 이동</a>
+            </li>
           </ul>
         </div>
       </div>

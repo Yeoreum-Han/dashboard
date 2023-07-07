@@ -6,10 +6,9 @@ import Port3 from "./components/Port3";
 function App() {
   const [currentTab, setCurrentTab] = useState(0);
   const menuArr = [
-    { name: "React", component: <Port1/>},
-    { name: "Node", component: <Port2/>},
-    { name: "Html", component: <Port3/> },
-    { name: "yrh", component: "프로필" }
+    { name: "React", component: <Port1 /> },
+    { name: "Node", component: <Port2 /> },
+    { name: "Html", component: <Port3 /> },
   ];
   const changeTab = (e, index) => {
     e.preventDefault();
@@ -20,12 +19,12 @@ function App() {
     <div>
       <header className="headerCover">
         <div className="header d-flex flex-row">
-        <h1>yrh</h1>
-        <p>html/css/js/react</p>
+          <h1>yrh</h1>
+          <p>html/css/js/react</p>
         </div>
       </header>
       <div className="contents shadow ">
-        <ul className="nav nav-tabs">
+        <ul className="nav nav-tabs ps-3">
           {menuArr.map((el, i) => (
             <li className="menuName nav-item" key={i}>
               <div
@@ -41,13 +40,13 @@ function App() {
             </li>
           ))}
         </ul>
-        <div className="component">
-          {menuArr[currentTab].component}
-        </div>
+        <div className="component">{menuArr[currentTab].component}</div>
       </div>
-      <footer>
-        <div>
-        footer영역
+      <footer >
+        <div className="d-flex flex-row justify-content-center">
+          <div>yrh.summer@gmail.com</div>
+          <div>|</div>
+          <div><a href="http://github.com" target="_blank" rel="noopener noreferrer">github</a></div>
         </div>
       </footer>
     </div>
