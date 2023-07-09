@@ -1,3 +1,67 @@
+@media screen and (max-width:1279px){  
+  .menuName{
+    max-height: 6vh;
+  }
+  .menuName> .nav-link {
+    height: 6vh;
+    padding-top: 5%;
+  }
+  .component{
+    height: 65vh;
+  }
+  .explain{
+    width:38%;
+    line-height: 1.3em;
+    font-size: 1.4rem;
+    max-height: 18vh;
+  }
+  .title{
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width:1023px){
+  .menuName{
+    max-height: 4vh;
+  }
+  .menuName> .nav-link {
+    height: 4vh;
+  }
+  .menuName>  .nav-link {
+    font-size: 1.4rem;
+  }
+
+  .veCover{
+    display: flexbox;
+    flex-wrap: wrap;
+    padding: 0 5%;
+  }
+  .videoCover{
+    min-width: 100%;
+  }
+  .explain{
+    min-width:100%;
+    line-height: 1.3em;
+    font-size: 1.3rem;
+    max-height: 25vh;
+    margin-top: 5%;
+  }
+  h5{
+    padding-left: 5%;
+  }
+}
+@media screen and (max-width:767px) {
+  h5{
+    font-size: 1rem;
+  }
+  .explain{
+    max-height: 35vh;
+    font-size: 0.8rem;
+  }
+} 
+
+html {
+  font-size: 10px;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -31,12 +95,15 @@ code {
 }
 
 .headerCover {
-  /* background-color: antiquewhite; */
   padding-top: 1.5%;
 }
 
 .header {
   margin: 0 15%;
+}
+
+h1{
+  font-size: 4.5rem;
 }
 
 .header > p {
@@ -47,7 +114,7 @@ code {
 
 .contents {
   margin: 2.5% 15%;
-  height: 72vh;
+  height: auto;
   background-color: #fff;
   border-radius: 5px;
 }
@@ -59,7 +126,7 @@ code {
 
 .menuName > div {
   padding: 3% 0;
-  height: 5vh;
+  height: 6vh;
   text-indent: 10%;
   letter-spacing: 4px;
 }
@@ -75,11 +142,10 @@ code {
   border-bottom: 1px solid #333;
   background-color: #fefbf3;
   border-radius: 5px 5px 0 0;
-  font-size: 17px;
+  font-size: 1.5rem;
 }
 
 .nav .nav-link.active {
-  box-sizing: border-box;
   border-color: #333;
   border-bottom: #fff;
   background-color: #fff;
@@ -92,26 +158,13 @@ code {
 
 .component {
   margin: 1% 0;
+  height: auto;
 }
-@media screen and (max-width: 479px){
-  .title{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .veCover{
-    display: block;
-    /* flex-direction: column; */
-  }
-  .explain{
-    border-left: none;
-  }
-  video{
-    width: 100%;
-  }
+.videoCover{ 
+  width: 60%;
 }
-
 h5 {
+  font-size: 2rem;
   letter-spacing: 3px;
   margin-bottom: 2%;
 }
@@ -119,18 +172,35 @@ h5 {
 .veCover{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
+
 video{
-  width: 65%;
+  width: 100%
 }
 .explain {
+  width: 38%;
   border-left: 1px solid #333;
   letter-spacing: 2px;
+  height: 58vh;
+  font-size: 1.6rem;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+  overflow: scroll;
 }
 .explain li:not(:first-child) {
   margin: 3% 0;
 }
+.explain::-webkit-scrollbar{
+  display: none;
+}
+.explain {
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}
 .title {
+  margin-top: 2%;
+  font-size: 1.7rem;
   letter-spacing: 3px;
 }
 
@@ -138,18 +208,23 @@ span {
   font-weight: bold;
 }
 
-footer {
-  background-color: #FEFBF3;
-  height: 8vh;
+/* .profCover{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5% 0;
 }
-
-footer > div {
-  margin: 0 15%;
-  height: 8vh;
-  text-align: center;
-  line-height: 50px;
+.profImg{
+  background: url(./media/profile1.png) no-repeat 0 0;
+  width: 22%;
+  height: 35vh;
 }
-
-footer > div > div{
-  margin: 0 5%;
+.profEx{
+  width: 50%;
 }
+.profEx>ul{
+  background-color: red;
+  margin: 10% 20%;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}  */
